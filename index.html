@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form id="expense_form">
+            <input type="text" id="description" placeholder="Expense Description" required /><br>
+            <select id="category" required>
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="grocery">Grocery</option>
+                <option value="miscellaneous">Miscellaneous</option>
+            </select><br>
+            <input type="number" id="amount" placeholder="Amount" required><br>
+            <input type="submit" value="Add Expense">
+        </form>
+        <h2>Expense Summary</h2>
+        <table id="expense_table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Month</th> <!-- Added Month column -->
+                    <th>Year</th> <!-- Added Year column -->
+                    <th>Action</th> <!-- Added Action column for Remove button -->
+                </tr>
+            </thead>
+            <tbody id="expense_list">
+                <!-- Expense items will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <div id="expenseAnalysis">
+        <h3>Expense Analysis</h3>
+        <p>Total Expenses: <span id="totalExpenses">0</span></p>
+        <p>Average Expense: <span id="averageExpense">0</span></p>
+        <p>Highest Expense: <span id="highestExpense">0</span></p>
+    </div>
+    <div id="filters">
+        <label for="categoryFilter">Filter by Category:</label>
+        <select id="categoryFilter">
+            <option value="">All</option>
+            <!-- Categories will be dynamically added here -->
+        </select>
+        
+        <label for="sortOrder">Sort By Amount:</label>
+        <select id="sortOrder">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+    </div>
+    <canvas id="expenseChart" width="400" height="200"></canvas>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

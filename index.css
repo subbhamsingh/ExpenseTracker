@@ -1,0 +1,142 @@
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color: #e8f0f2; /* Soft light blue background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Darker text color for readability */
+}
+
+.container {
+    max-width: 900px; /* Increased max-width for better readability */
+    margin: 50px auto; /* Center the container and provide space */
+    padding: 30px;
+    border: 2px solid #3498db; /* Blue border with a thinner line */
+    background: linear-gradient(135deg, #ffffff, #f0f9ff); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 15px; /* Rounded corners */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #3498db; /* Blue color for headings */
+    font-weight: 600; /* Slightly bolder text */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+form {
+    margin-bottom: 30px; /* Increased space below the form */
+    padding: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+input[type="text"], select, input[type="number"], input[type="submit"] {
+    padding: 12px; /* Increased padding for better touch/click targets */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus, select:focus, input[type="number"]:focus, input[type="submit"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #66afe9; /* Light blue focus color */
+}
+
+input[type="submit"] {
+    background-color: #3498db; /* Blue background */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions for background and text color */
+    border: none; /* Remove default border */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px; /* Space between form and table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+th {
+    background-color: #3498db; /* Blue background for headers */
+    color: #fff; /* White text color */
+    font-weight: 600; /* Slightly bolder text */
+}
+
+.remove-btn {
+    background-color: #e74c3c; /* Red background for remove button */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.remove-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Analysis Section */
+#expenseAnalysis {
+    margin-top: 30px; /* Space above analysis section */
+    padding: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+#expenseAnalysis p {
+    font-size: 18px; /* Larger font size for readability */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Filters Section */
+#filters {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+#filters label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#filters select {
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9; /* Light background for selects */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Inner shadow effect */
+}
+
+/* Chart Styling */
+canvas#expenseChart {
+    margin-top: 30px;
+    border: 2px solid #3498db; /* Add border to match container */
+    border-radius: 10px; /* Rounded corners */
+}
